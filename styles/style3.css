@@ -1,0 +1,353 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+
+}
+@font-face {
+    font-family: "barlow-medium";
+    src: url(../resources/fonts/barlow/Barlow-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "tungsten-bold";
+    src: url(../resources/fonts/Tungsten-Bold.otf);
+  }
+
+  :root {
+    --color-redValorant: #ff4655;
+    --color-beige: #ece8e1;
+    --color-beigeLight: rgba(255, 255, 255, 0.5);
+    --color-black: #0f1923;
+    --color-blackLight: rgba(0, 0, 0, 0.2);
+    --color-grey: #383e3a;
+    --font-tungsten: "tungsten-bold", Arial, sans-serif;
+    --font-barlowBold: "Barlow", sans-serif;
+    --font-barlowMedium: "barlow-medium", sans-serif;
+  }
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../resources/csitBG.png);
+    background-size: 650px 650px;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(253, 253, 253)color;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+.info h1{
+    font-family: var(--font-tungsten);
+    position: absolute;
+    font-size: 100px;
+    left: 70px;
+    top: 200px;
+    bottom: 200px;
+    letter-spacing: 0px;
+    color: rgb(0, 0, 0);
+}
+.info h3{
+    position: absolute;
+    font-family: var(--font-tungsten);
+    font-size: 50px;
+    left: 70px;
+    top: 290px;
+    bottom: 300px;
+    color: rgb(0, 0, 0);
+}
+.info p{
+    position: absolute;
+    font-size: 21px;
+    font-family: var(--font-barlowMedium);
+    background: linear-gradient(to right, rgb(82, 100, 255), white); 
+    left: 70px;
+    top: 340px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 80%; 
+    max-height: 50%;
+    overflow: hidden;
+    text-align: justify; 
+    line-height: 1.5; 
+}
+.info p small{
+    color: rgb(0, 0, 0);
+}
+.lei{
+    position: absolute;
+    border: solid black;
+    background-image: url(../resources/personBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 120px;
+    left: 530px;
+    padding: 15px;
+    width: 500px;
+    height: 600px;
+}
+.icons{
+    display: flex;
+}
+.icons a{
+    top: 220px;
+    left: 1100px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+}
+.fa-computer{
+    position: absolute;
+    top: 220px;
+    left: 1110px;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+    border: solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 65px;
+    height: 60px;
+    font-size: 50px;
+    line-height:
+     101%;
+     transition: 0.8s;
+}
+.hidecomp h3{
+    font-size: 30px;
+    top: 490px;
+    left: 70%;
+}
+.icons .computer a i{
+    font-size: 20px;
+    line-height: 60px;
+    background: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.icons .computer a i{
+    font-size: 40px;
+    line-height: 60px;
+}
+.icons .computer a i:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0); 
+}
+.icons .computer a i:hover:before{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.hidecomp {
+    width: 30%;
+    font-size: 7px;
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+.computer:hover + .hidecomp {
+    display: block;
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+    max-width: 80%; 
+    max-height: 50%; 
+    overflow: hidden; 
+    text-align: justify;
+    line-height: 1.5; 
+  }
+.fa-microchip{
+    position: absolute;
+    top: 220px;
+    left: 1200px;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+    border: solid black;
+    border-radius: 50%;
+    width: 65px;
+    height: 60px;
+    font-size: 50px;
+    line-height: 101%;
+    transition: 0.8s;
+}
+.hidemicro h3{
+    font-size: 30px;
+    top: 490px;
+    left: 70%;
+}
+.icons .micro a i{
+    font-size: 30px;
+    line-height: 60px;
+    background: white;
+    transition: 0.2s;
+}
+.icons .micro a i{
+    font-size: 40px;
+    line-height: 60px;
+}
+.icons .micro a i:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0); 
+}
+.icons .micro a i:hover:before{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.hidemicro {
+    width: 30%;
+    font-size: 7px;
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+.micro:hover + .hidemicro {
+    display: block;
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+    max-width: 80%; 
+    max-height: 50%; 
+    overflow: hidden; 
+    text-align: justify;
+    line-height: 1.5; 
+}
+.fa-network-wired{
+    position: absolute;
+    top: 300px;
+    left: 1110px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+    border: solid black;
+    border-radius: 50%;
+    width: 65px;
+    height: 60px;
+    font-size: 50px;
+    line-height: 101%;
+}
+.hidewire h3{
+    font-size: 30px;
+    top: 490px;
+    left: 70%;
+}
+.icons .wire a i{
+    font-size: 30px;
+    line-height: 60px;
+    background: white;
+    transition: 0.2s;
+}
+.icons .wire a i{
+    font-size: 40px;
+    line-height: 60px;
+}
+.icons .wire a i:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0); 
+}
+.icons .wire a i:hover:before{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.hidewire {
+    width: 30%;
+    font-size: 7px;
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+.wire:hover + .hidewire {
+    display: block;
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+    max-width: 80%; 
+    max-height: 50%; 
+    overflow: hidden; 
+    text-align: justify;
+    line-height: 1.5; 
+}
+.fa-laptop{
+    position: absolute;
+    top: 301px;
+    left: 1205px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+    border: solid black;
+    border-radius: 50%;
+    width: 65px;
+    height: 60px;
+    font-size: 50px;
+    line-height: 101%;
+}
+.hidelap h3{
+    font-size: 30px;
+    top: 490px;
+    left: 70%;
+}
+.icons .laptop a i{
+    font-size: 30px;
+    line-height: 60px;
+    background: white;
+    transition: 0.2s;
+}
+.icons .laptop a i{
+    font-size: 40px;
+    line-height: 60px;
+}
+.icons .laptop a i:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0); 
+}
+.icons .laptop a i:hover:before{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.hidelap {
+    width: 30%;
+    font-size: 7px;
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+.laptop:hover + .hidelap {
+    display: block;
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+    max-width: 80%; 
+    max-height: 50%; 
+    overflow: hidden; 
+    line-height: 1.5; 
+}
